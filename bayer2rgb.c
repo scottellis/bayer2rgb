@@ -131,8 +131,6 @@ IplImage *load_raw_image(const char *s)
 		cvReleaseImage(&img);
 		return NULL;
 	}
-	
-	//img->imageData = img->imageDataOrigin;
 
 	return img;
 }
@@ -168,11 +166,3 @@ char *load_raw_data(const char *s, int size)
 	return dat;
 }
 
-
-	/*
-	cvNamedWindow("main", CV_WINDOW_AUTOSIZE);
-	cvMoveWindow("shapegen", 10, 10);
-	cvShowImage("main", img);
-	cvWaitKey(0);
-	cvDestroyWindow("main");	
-	*/
