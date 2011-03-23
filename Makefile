@@ -13,5 +13,5 @@ $(TARGET): $(TARGET).c
 	
 	
 clean:
-	rm $(TARGET)
+	rm -f $(TARGET)
 
