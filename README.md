@@ -1,4 +1,4 @@
-  imgconvert
+  bayer2rgb
 =======
 
 Convert a raw bayer image from mt9p031 at full size into a rgb (bgr)
