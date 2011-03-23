@@ -101,13 +101,10 @@ IplImage *convert_image(IplImage *bayer)
 	if (!dst) 
 		printf("cvCreateImage - dst - failed\n");
 	else {
-		//cvCvtColor(src, dst, CV_BayerGB2RGB);
-		//cvCvtColor(src, dst, CV_BayerBG2RGB);
-		//cvCvtColor(src, dst, CV_BayerRG2RGB);
-		// -works cvCvtColor(src, dst, CV_BayerGR2RGB);
+		// this works 
+		// cvCvtColor(src, dst, CV_BayerGR2RGB);
 		
-		//cvCvtColor(src, dst, CV_BayerGR2BGR);
-		//cvCvtColor(src, dst, CV_BayerRG2BGR);
+		// but we want BGR for cvSaveImage(), so use this
 		cvCvtColor(src, dst, CV_BayerGB2BGR);
 	}
 
