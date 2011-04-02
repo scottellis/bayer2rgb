@@ -19,8 +19,8 @@
 #include <cv.h>
 #include <highgui.h>
 
-#define IMAGE_WIDTH 2592
-#define IMAGE_HEIGHT 1944
+#define IMAGE_WIDTH 2560
+#define IMAGE_HEIGHT 1920
 
 IplImage *load_raw_image(const char *s);
 char *load_raw_data(const char *s, int size);
